@@ -162,6 +162,7 @@ main {
 .card.socials a {
     text-decoration: none;
     color: black;
+    
 }
 
 .card.socials a:hover {
@@ -189,9 +190,12 @@ main {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
     main {
         padding: 20px;
+    }
+    .image-wrap {
+        margin-bottom: -20px;
     }
 }
 
