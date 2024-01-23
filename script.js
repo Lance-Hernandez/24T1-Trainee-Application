@@ -57,3 +57,16 @@ function eveningMode(hour) {
         containerDark.classList.add('container-dark-mode');
     }
 }
+
+// Script to copy discord tag when discord anchor link is clicked
+
+function toolTipFunction() {
+    const toolTip = document.getElementById("myToolTip");
+    toolTip.innerHTML = "USER COPIED";
+
+    setTimeout(() => {
+        toolTip.innerHTML = "DISCORD";
+    }, 2000);
+
+    navigator.clipboard.writeText("lvncex");
+}
