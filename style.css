@@ -37,10 +37,6 @@ main {
     transition: ease 0.3s;
 }
 
-.greeting {
-    font-weight: 600;
-}
-
 .card {
     display: flex;
     flex-direction: column;
@@ -52,6 +48,37 @@ main {
 .card.intro {
     padding: 0 20px 20px;
     gap: 20px;
+}
+
+.greeting {
+    font-weight: 600;
+}
+
+.profile-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 3px;
+    margin-bottom: 2px;
+}
+
+.name-wrapper .name {
+    font-weight: 600;
+}
+
+.name-wrapper .subheading {
+    color: grey;
+}
+
+.profile-description {
+    text-wrap: pretty;
+    line-height: 16px;
 }
 
 .stats-flags-container {
@@ -98,29 +125,3 @@ main {
     }
   }
 
-.profile-heading {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.name-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    gap: 3px;
-    margin-bottom: 2px;
-}
-
-.name-wrapper .name {
-    font-weight: 600;
-}
-
-.name-wrapper .subheading {
-    color: grey;
-}
-
-.profile-description {
-    text-wrap: pretty;
-    line-height: 16px;
-}
