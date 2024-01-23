@@ -2,4 +2,82 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main {
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.05);
+    gap: 20px;
+    padding: 20px;
+    width: 370px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(250, 250, 250);
+}
+
+.greeting {
+    font-weight: 600;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    border-radius: 15px;
+    padding: 0 20px 20px;
+    gap: 20px;
+    height: 210px;
+}
+
+.card .stats {
+    flex-grow: 1;
+}
+
+.profile-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 3px;
+    margin-bottom: 2px;
+}
+
+.name-wrapper .name {
+    font-weight: 600;
+}
+
+.name-wrapper .subheading {
+    color: grey;
+}
+
+.profile-description {
+    text-wrap: pretty;
+    line-height: 16px;
 }
