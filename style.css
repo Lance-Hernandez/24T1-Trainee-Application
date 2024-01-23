@@ -12,7 +12,6 @@ body {
 }
 
 main {
-    height: 100vh;
     padding: 100px;
     display: flex;
     align-items: center;
@@ -26,7 +25,7 @@ main {
     box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.05);
     gap: 20px;
     padding: 20px;
-    width: 370px;
+    max-width: 500px;
 }
 
 .header {
@@ -35,6 +34,7 @@ main {
     padding: 20px;
     border-radius: 15px;
     background-color: rgb(250, 250, 250);
+    transition: ease 0.3s;
 }
 
 .greeting {
@@ -46,14 +46,57 @@ main {
     flex-direction: column;
     background-color: rgb(250, 250, 250);
     border-radius: 15px;
-    padding: 0 20px 20px;
-    gap: 20px;
-    height: 210px;
+    transition: ease 0.3s;
 }
 
-.card .stats {
+.card.intro {
+    padding: 0 20px 20px;
+    gap: 20px;
+}
+
+.stats-flags-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card.stats {
+    gap: 10px;
+    padding: 20px;
+    flex-grow: 2;
+}
+
+.card.flags {
+    gap: 10px;
+    padding: 20px;
+    width: 160px;
     flex-grow: 1;
 }
+
+.flag-edit {
+    border-radius: 10px;
+    opacity: 0.4;
+    transition: 0.5s ease;
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
+}
+
+.flag-edit:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+@media screen and (max-width: 677px) {
+    .card.flags {
+      flex-direction: row;
+      gap: 20px;
+    }
+    .flag-edit {
+        width: calc(50% - 10px);
+    }
+  }
 
 .profile-heading {
     display: flex;
