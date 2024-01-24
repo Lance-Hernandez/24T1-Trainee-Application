@@ -10,7 +10,8 @@ function startTime() {
     document.getElementById('time').innerHTML = `The local time is ${h}:${m}:${s}`;
 
     updateGreeting(h);
-    eveningMode(h)
+    eveningMode(h);
+    updateBackground(h);
 
     setTimeout(startTime, 1000);
 }
@@ -31,6 +32,20 @@ function updateGreeting(hour) {
         greetingMessage.innerHTML = "Good afternoon!";
     } else {
         greetingMessage.innerHTML = "Good evening!";
+    }
+}
+
+// Script to update background image of card-container depending on time
+
+function updateBackground(hour) {
+    const cardContainer = document.getElementById('card-container');
+
+    if (hour >= 5 && hour < 12) {
+        cardContainer.classList.add('morning');
+    } else if (hour >= 12 && hour < 17) {
+        cardContainer.classList.add('afternoon');
+    } else {
+        cardContainer.classList.add('evening');
     }
 }
 
@@ -55,6 +70,15 @@ function eveningMode(hour) {
         flagsDark.classList.add('card-dark-mode');
         socialsDark.classList.add('card-dark-mode');
         containerDark.classList.add('container-dark-mode');
+    } else {
+        bodyDark.classList.remove('dark-mode');
+        cardDark.classList.remove('card-dark-mode');
+        greetingDark.classList.remove('card-dark-mode');
+        statsDark.classList.remove('card-dark-mode');
+        portfolioDark.classList.remove('card-dark-mode');
+        flagsDark.classList.remove('card-dark-mode');
+        socialsDark.classList.remove('card-dark-mode');
+        containerDark.classList.remove('container-dark-mode');
     }
 }
 

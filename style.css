@@ -19,6 +19,7 @@ main {
 }
 
 .card-container {
+    position: relative; /* Add this line to make the position of ::before relative to .card-container */
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -26,6 +27,37 @@ main {
     gap: 20px;
     padding: 20px;
     max-width: 500px;
+}
+
+/* Uses the ::before pseudo-element to create a layered background */
+.card-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    opacity: 0.5;
+    z-index: -1; /* Places the background behind the other cards */
+}
+
+.morning::before {
+    background-image: url("assets/backgrounds/day-bg.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.afternoon::before {
+    background-image: url("assets/backgrounds/arvo-bg.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.night::before {
+    background-image: url("assets/backgrounds/night-bg.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .header {
@@ -96,6 +128,12 @@ main {
     justify-content: center;
 }
 
+.fav-pkmn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .card.flags {
     gap: 10px;
     padding: 20px;
@@ -131,8 +169,7 @@ main {
     display: flex;
     justify-content: center;
     align-self: center;
-    flex-basis: 200px;
-    flex-grow: 1;
+    width: 100%;
 }
 
 .image-wrap img {
@@ -193,9 +230,6 @@ main {
 @media screen and (max-width: 500px) {
     main {
         padding: 20px;
-    }
-    .image-wrap {
-        margin-bottom: -20px;
     }
 }
 

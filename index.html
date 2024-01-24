@@ -19,7 +19,7 @@
 </head>
 <body onload="startTime()">
     <main>
-        <div class="card-container">
+        <div class="card-container" id="card-container">
             <div class="header">
                 <p class="greeting" id="greeting">Good evening!</p>
                 <p id="time"></p>
@@ -47,7 +47,10 @@
                     <p><b>Personality:</b> ESFJ</p>
                     <p><b>Degree:</b> Bachelor of Computer Science</p>
                     <p><b>Favourite Cuisine:</b> Korean and Japanese</p>
-                    <p><b>Favourite Pokémon:</b> Gengar</p>
+                    <div class="fav-pkmn">
+                        <p><b>Favourite Pokémon:</b> Gengar</p>
+                        <img src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/94.gif" alt="Gengar Animated Sprite" width="24">
+                    </div>
                 </div>
                 <div class="card flags">
                     <img class="flag-edit" src="assets/flags/australia flag.jpg" alt="Australian flag">
@@ -66,9 +69,9 @@
                 </div>
             </div>
 
-             <div class="card socials">
+             <div class="card socials" id="card-socials">
                 <a href="https://www.linkedin.com/in/lghernandez/" target="_blank">LINKEDIN</a>
-                <a href="" onclick="toolTipFunction()" id="myToolTip">DISCORD</a>
+                <a href="#card-socials" onclick="toolTipFunction()" id="myToolTip">DISCORD</a>
                 <a href="https://github.com/Lance-Hernandez" target="_blank">GITHUB</a>
                 <a href="https://www.instagram.com/lance.dez/" target="_blank">INSTAGRAM</a>
             </div>
