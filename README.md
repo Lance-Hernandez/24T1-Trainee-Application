@@ -18,4 +18,8 @@ For this project, I implemented dynamic script with JS to imbue the notion of ti
   - Backgrounds from: https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/
 - Night/Dark-mode that is enabled from 7PM - 5AM
 
+## Video of transition from Afternoon to Evening
+
+https://github.com/Lance-Hernandez/24T1-Trainee-Application/assets/147289508/80c43883-4ab6-49ba-b7d7-ea2337ce569d
+
 <b><i>Wish me luck!</i>  This would be an amazing opportunity to learn new skills and meet new people as I begin a new degree!</b>
