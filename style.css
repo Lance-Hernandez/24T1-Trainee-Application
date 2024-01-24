@@ -209,10 +209,17 @@ main {
     font-weight: 800;
 }
 
+@media screen and (min-width: 720px) {
+    main {
+        height: 100vh;
+    }
+}
+
 @media screen and (max-width: 677px) {
     .card.flags {
       flex-direction: row;
       gap: 20px;
+      width: 100%;
     }
     .flag-edit {
         width: calc(50% - 10px);
