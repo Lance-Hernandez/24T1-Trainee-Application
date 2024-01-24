@@ -246,14 +246,6 @@ main {
     }
 }
 
-@media screen and (min-width: 1440px) {
-    * {
-        font-size: 12px;
-    }
-    .card-container {
-        max-width: 600px;
-}
-
 /* Dark Mode */
 
 .dark-mode {
