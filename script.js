@@ -28,7 +28,7 @@ function updateGreeting(hour) {
 
     if (hour >= 5 && hour < 12) {
         greetingMessage.innerHTML = "Good morning!";
-    } else if (hour >= 12 && hour < 17) {
+    } else if (hour >= 12 && hour < 19) {
         greetingMessage.innerHTML = "Good afternoon!";
     } else {
         greetingMessage.innerHTML = "Good evening!";
@@ -42,7 +42,7 @@ function updateBackground(hour) {
 
     if (hour >= 5 && hour < 12) {
         cardContainer.classList.add('morning');
-    } else if (hour >= 12 && hour < 17) {
+    } else if (hour >= 12 && hour < 19) {
         cardContainer.classList.add('afternoon');
     } else {
         cardContainer.classList.add('evening');
