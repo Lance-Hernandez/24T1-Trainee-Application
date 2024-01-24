@@ -8,11 +8,11 @@
 
 body {
     max-width: 1280px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 main {
-    padding: 100px;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@ main {
 }
 
 .card-container {
-    position: relative; /* Add this line to make the position of ::before relative to .card-container */
+    position: relative; /* To make the position of ::before relative to .card-container */
     display: flex;
     flex-direction: column;
     border-radius: 20px;
