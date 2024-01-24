@@ -46,7 +46,7 @@ function eveningMode(hour) {
     const socialsDark = document.querySelector('.card.socials');
     const containerDark = document.querySelector('.card-container');
     
-    if (!(hour >5 && hour < 12)) {
+    if (!(hour >5 && hour < 17)) {
         bodyDark.classList.add('dark-mode');
         cardDark.classList.add('card-dark-mode');
         greetingDark.classList.add('card-dark-mode');
