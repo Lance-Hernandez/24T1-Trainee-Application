@@ -60,6 +60,7 @@ function eveningMode(hour) {
     const flagsDark = document.querySelector('.card.flags');
     const socialsDark = document.querySelector('.card.socials');
     const containerDark = document.querySelector('.card-container');
+    const footerDark = document.querySelector('footer');
     
     if (!(hour >5 && hour < 19)) {
         bodyDark.classList.add('dark-mode');
@@ -70,6 +71,7 @@ function eveningMode(hour) {
         flagsDark.classList.add('card-dark-mode');
         socialsDark.classList.add('card-dark-mode');
         containerDark.classList.add('container-dark-mode');
+        footerDark.classList.add('dark-footer');
     } else {
         bodyDark.classList.remove('dark-mode');
         cardDark.classList.remove('card-dark-mode');
@@ -79,6 +81,7 @@ function eveningMode(hour) {
         flagsDark.classList.remove('card-dark-mode');
         socialsDark.classList.remove('card-dark-mode');
         containerDark.classList.remove('container-dark-mode');
+        footerDark.classList.remove('dark-footer');
     }
 }
 

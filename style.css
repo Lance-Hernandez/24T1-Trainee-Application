@@ -59,6 +59,7 @@ main {
     background-image: url("assets/backgrounds/night-bg.png");
     background-size: auto 100%;
     background-repeat: no-repeat;
+    opacity: 0.3;
 }
 
 .header {
@@ -271,8 +272,13 @@ main {
 footer {
     max-width: 500px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: black;
+}
+
+.dark-footer {
+    color: #f1f1f1;
 }
