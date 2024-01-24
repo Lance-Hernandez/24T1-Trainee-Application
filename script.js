@@ -45,7 +45,7 @@ function updateBackground(hour) {
     } else if (hour >= 12 && hour < 19) {
         cardContainer.classList.add('afternoon');
     } else {
-        cardContainer.classList.add('evening');
+        cardContainer.classList.add('night');
     }
 }
 
@@ -61,7 +61,7 @@ function eveningMode(hour) {
     const socialsDark = document.querySelector('.card.socials');
     const containerDark = document.querySelector('.card-container');
     
-    if (!(hour >5 && hour < 17)) {
+    if (!(hour >5 && hour < 19)) {
         bodyDark.classList.add('dark-mode');
         cardDark.classList.add('card-dark-mode');
         greetingDark.classList.add('card-dark-mode');
